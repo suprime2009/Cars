@@ -2,56 +2,66 @@ package com.softserve.model;
 
 /**
  * This class for route
+ * 
  * @author Pavel
  *
  */
 public abstract class Car {
 
-    private String model;
-    private double engine;
-    private double benzinPer100Km;
-    
-    public Car(String model, double engine, double benzinPer100Km) {
-	this.model = model;
-	this.engine = engine;
-	this.benzinPer100Km = benzinPer100Km;
-    }
+	private String model;
+	private double engine;
+	private double benzinPer100Km;
+	private final int ROUNDING = 100;
 
-    /** jhgfjhfgjhfjhgfjhfjytfrjytfjy
-     * @return the model
-     */
-    public String getModel() {
-        return model;
-    }
+	public Car(String model, double engine, double benzinPer100Km) {
+		this.model = model;
+		this.engine = engine;
+		this.benzinPer100Km = benzinPer100Km;
+	}
 
-    /**
-     * @param model the model to set
-     */
-    public void setModel(String model) {
-        this.model = model;
-    }
+	public double valueOfFuelForTrip(Route route) {
+		return (route.getK³lometrs() * benzinPer100Km) / ROUNDING;
+		
+	}
 
-    /**
-     * @return the engine
-     */
-    public double getEngine() {
-        return engine;
-    }
+	/**
+	 * @return the model
+	 */
+	public String getModel() {
+		return model;
+	}
 
-    /**
-     * @param engine the engine to set
-     */
-    public void setEngine(double engine) {
-        this.engine = engine;
-    }
+	/**
+	 * @param model
+	 *            the model to set
+	 */
+	public void setModel(String model) {
+		this.model = model;
+	}
 
-    /* (non-Javadoc)
-     * @see java.lang.Object#toString()
-     */
-    @Override
-    public String toString() {
-	return "Car [model=" + model + ", engine=" + engine + "]";
-    }
-    
+	/**
+	 * @return the engine
+	 */
+	public double getEngine() {
+		return engine;
+	}
+
+	/**
+	 * @param engine
+	 *            the engine to set
+	 */
+	public void setEngine(double engine) {
+		this.engine = engine;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Car [model=" + model + ", engine=" + engine + "]";
+	}
 
 }

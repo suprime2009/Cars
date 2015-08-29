@@ -2,16 +2,13 @@ package com.softserve.model;
 
 /**
  * This class for route
- * 
  * @author Pavel
  *
  */
 public abstract class Car {
 
-	
     private String model;
     private double engine;
-<<<<<<< HEAD
     private double benzinPer100Km;
     private int averSpeed;
     private final int ROUNDING = 100;
@@ -22,24 +19,6 @@ public abstract class Car {
 	this.benzinPer100Km = benzinPer100Km;
 	this.averSpeed = averSpeed;
     }
-=======
-	private double benzinPer100Km;
-	private final int ROUNDING = 100;
-
-	abstract double needOfFuel (double klm);
-    
-
-	public Car(String model, double engine, double benzinPer100Km) {
-		this.model = model;
-		this.engine = engine;
-		this.benzinPer100Km = benzinPer100Km;
-	}
-    
-	public double valueOfFuelForTrip(Route route) {
-		return (route.getK³lometrs() * benzinPer100Km) / ROUNDING;
-		
-	}
->>>>>>> 30861910be427e08882b513b002a9d75377ec443
 
     /** jhgfjhfgjhfjhgfjhfjytfrjytfjy
      * @return the model
@@ -81,9 +60,6 @@ public abstract class Car {
     public String toString() {
 	return "Car [model=" + model + ", engine=" + engine + "]";
     }
-	/*
-	 * method shows a number of fuel for needed kilemetres
-	 */
-
+    
 
 }

@@ -1,4 +1,4 @@
-package com.softserve.Cars;
+package com.softserve.model;
 
 public abstract class Car {
 

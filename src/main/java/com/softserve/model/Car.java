@@ -12,6 +12,7 @@ public abstract class Car {
     private String model;
     private double engine;
 <<<<<<< HEAD
+<<<<<<< HEAD
     private double benzinPer100Km;
     private int averSpeed;
     private final int ROUNDING = 100;
@@ -28,6 +29,13 @@ public abstract class Car {
 
 	abstract double needOfFuel (double klm);
     
+=======
+	private double benzinPer100Km;
+	private final int ROUNDING = 100;
+
+	abstract double needOfFuel (double klm);
+    
+>>>>>>> 30861910be427e08882b513b002a9d75377ec443
 
 	public Car(String model, double engine, double benzinPer100Km) {
 		this.model = model;
@@ -39,6 +47,9 @@ public abstract class Car {
 		return (route.getK³lometrs() * benzinPer100Km) / ROUNDING;
 		
 	}
+<<<<<<< HEAD
+>>>>>>> 30861910be427e08882b513b002a9d75377ec443
+=======
 >>>>>>> 30861910be427e08882b513b002a9d75377ec443
 
     /** jhgfjhfgjhfjhgfjhfjytfrjytfjy

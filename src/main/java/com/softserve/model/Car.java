@@ -1,5 +1,10 @@
 package com.softserve.model;
 
+/**
+ * This class for route
+ * @author Pavel
+ *
+ */
 public abstract class Car {
 
     private String model;

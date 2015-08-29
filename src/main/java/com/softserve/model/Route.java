@@ -3,11 +3,11 @@ package com.softserve.model;
 public class Route {
     
     private String nameOfRoute;
-    private int k³lometrs;
+    private int kilometrs;
     
-    public Route(String nameOfRoute, int k³lometrs) {
+    public Route(String nameOfRoute, int kilometrs) {
 	this.nameOfRoute = nameOfRoute;
-	this.k³lometrs = k³lometrs;
+	this.kilometrs = kilometrs;
     }
 
     /**
@@ -27,15 +27,15 @@ public class Route {
     /**
      * @return the k³lometrs
      */
-    public int getK³lometrs() {
-        return k³lometrs;
+    public int getKilometrs() {
+        return kilometrs;
     }
 
     /**
      * @param k³lometrs the k³lometrs to set
      */
-    public void setK³lometrs(int k³lometrs) {
-        this.k³lometrs = k³lometrs;
+    public void setKilometrs(int kilometrs) {
+        this.kilometrs = kilometrs;
     }
 
     /* (non-Javadoc)
@@ -43,7 +43,7 @@ public class Route {
      */
     @Override
     public String toString() {
-	return "Route [nameOfRoute=" + nameOfRoute + ", k³lometrs=" + k³lometrs + "]";
+	return "Route [nameOfRoute=" + nameOfRoute + ", kilometrs=" + kilometrs + "]";
     }
     
     

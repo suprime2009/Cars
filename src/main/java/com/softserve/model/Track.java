@@ -4,8 +4,8 @@ public class Track extends Car {
 	
 	double lenghttrl;
 	
-	public Track(String model,double engine, double benzinPer100Km){
-		super(model,engine,benzinPer100Km);
+	public Track(String model,double engine, double benzinPer100Km, int averSpeed){
+		super(model,engine,benzinPer100Km, averSpeed);
 	}
 	public void getVoice(){
 		System.out.println("Duu - duu!!!");

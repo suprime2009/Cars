@@ -20,7 +20,7 @@ public abstract class Car {
 	}
 
 	public double valueOfFuelForTrip(Route route) {
-		return (route.getK³lometrs() * benzinPer100Km) / ROUNDING;
+		return (route.getKilometrs() * benzinPer100Km) / ROUNDING;
 		
 	}
 

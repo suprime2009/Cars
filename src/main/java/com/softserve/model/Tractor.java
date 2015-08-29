@@ -12,6 +12,5 @@ public class Tractor extends Car {
 	}
 
 	public Cargo cargo; 
-
 	
 }

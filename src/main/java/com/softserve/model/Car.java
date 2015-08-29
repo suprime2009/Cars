@@ -8,14 +8,23 @@ package com.softserve.model;
  */
 public abstract class Car {
 
-<<<<<<< HEAD
+	
     private String model;
     private double engine;
+	private double benzinPer100Km;
+	private final int ROUNDING = 100;
+
+	abstract double needOfFuel (double klm);
     
     public Car(String model, double engine) {
 	this.model = model;
 	this.engine = engine;
     }
+    
+	public double valueOfFuelForTrip(Route route) {
+		return (route.getK³lometrs() * benzinPer100Km) / ROUNDING;
+		
+	}
 
     /** jhgfjhfgjhfjhgfjhfjytfrjytfjy
      * @return the model
@@ -55,63 +64,12 @@ public abstract class Car {
 	/*
 	 * method shows a number of fuel for needed kilemetres
 	 */
-    abstract double needOfFuel (double klm);
-=======
-	private String model;
-	private double engine;
-	private double benzinPer100Km;
-	private final int ROUNDING = 100;
-
+    
 	public Car(String model, double engine, double benzinPer100Km) {
 		this.model = model;
 		this.engine = engine;
 		this.benzinPer100Km = benzinPer100Km;
 	}
 
-	public double valueOfFuelForTrip(Route route) {
-		return (route.getK³lometrs() * benzinPer100Km) / ROUNDING;
-		
-	}
-
-	/**
-	 * @return the model
-	 */
-	public String getModel() {
-		return model;
-	}
-
-	/**
-	 * @param model
-	 *            the model to set
-	 */
-	public void setModel(String model) {
-		this.model = model;
-	}
-
-	/**
-	 * @return the engine
-	 */
-	public double getEngine() {
-		return engine;
-	}
-
-	/**
-	 * @param engine
-	 *            the engine to set
-	 */
-	public void setEngine(double engine) {
-		this.engine = engine;
-	}
-
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.lang.Object#toString()
-	 */
-	@Override
-	public String toString() {
-		return "Car [model=" + model + ", engine=" + engine + "]";
-	}
->>>>>>> 49fc5a6ef1c4ad216140b55911cab5a92e2a5e81
 
 }

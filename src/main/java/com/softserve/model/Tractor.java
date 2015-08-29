@@ -11,4 +11,10 @@ public class Tractor extends Car {
 		super(model, engine);
 		
 	}
+	/*
+	 * method shows a number of fuel for needed kilemetres
+	 */
+	public double needOfFuel (double klm){
+		return klm*10;
+	}
 }

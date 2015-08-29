@@ -50,6 +50,9 @@ public abstract class Car {
     public String toString() {
 	return "Car [model=" + model + ", engine=" + engine + "]";
     }
-    
+	/*
+	 * method shows a number of fuel for needed kilemetres
+	 */
+    abstract double needOfFuel (double klm);
 
 }

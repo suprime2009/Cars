@@ -16,10 +16,12 @@ public abstract class Car {
 
 	abstract double needOfFuel (double klm);
     
-    public Car(String model, double engine) {
-	this.model = model;
-	this.engine = engine;
-    }
+
+	public Car(String model, double engine, double benzinPer100Km) {
+		this.model = model;
+		this.engine = engine;
+		this.benzinPer100Km = benzinPer100Km;
+	}
     
 	public double valueOfFuelForTrip(Route route) {
 		return (route.getK³lometrs() * benzinPer100Km) / ROUNDING;
@@ -64,12 +66,6 @@ public abstract class Car {
 	/*
 	 * method shows a number of fuel for needed kilemetres
 	 */
-    
-	public Car(String model, double engine, double benzinPer100Km) {
-		this.model = model;
-		this.engine = engine;
-		this.benzinPer100Km = benzinPer100Km;
-	}
 
 
 }

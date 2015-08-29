@@ -9,10 +9,12 @@ public abstract class Car {
 
     private String model;
     private double engine;
+    private double benzinPer100Km;
     
-    public Car(String model, double engine) {
+    public Car(String model, double engine, double benzinPer100Km) {
 	this.model = model;
 	this.engine = engine;
+	this.benzinPer100Km = benzinPer100Km;
     }
 
     /** jhgfjhfgjhfjhgfjhfjytfrjytfjy

@@ -23,8 +23,6 @@ public abstract class Car {
 	this.averSpeed = averSpeed;
     }
 
-    abstract double needOfFuel(double klm);
-
     /**
      * method shows a number of fuel for needed kilemetres
      */

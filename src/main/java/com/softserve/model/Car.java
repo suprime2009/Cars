@@ -8,49 +8,25 @@ package com.softserve.model;
  */
 public abstract class Car {
 
-	
+ 
     private String model;
     private double engine;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    private double benzinPer100Km;
-    private int averSpeed;
-    private final int ROUNDING = 100;
-    
-    public Car(String model, double engine, double benzinPer100Km, int averSpeed) {
-	this.model = model;
-	this.engine = engine;
-	this.benzinPer100Km = benzinPer100Km;
-	this.averSpeed = averSpeed;
-    }
-=======
-	private double benzinPer100Km;
-	private final int ROUNDING = 100;
+ private double benzinPer100Km;
+ private final int ROUNDING = 100;
 
-	abstract double needOfFuel (double klm);
+ abstract double needOfFuel (double klm);
     
-=======
-	private double benzinPer100Km;
-	private final int ROUNDING = 100;
 
-	abstract double needOfFuel (double klm);
+ public Car(String model, double engine, double benzinPer100Km) {
+  this.model = model;
+  this.engine = engine;
+  this.benzinPer100Km = benzinPer100Km;
+ }
     
->>>>>>> 30861910be427e08882b513b002a9d75377ec443
-
-	public Car(String model, double engine, double benzinPer100Km) {
-		this.model = model;
-		this.engine = engine;
-		this.benzinPer100Km = benzinPer100Km;
-	}
-    
-	public double valueOfFuelForTrip(Route route) {
-		return (route.getK³lometrs() * benzinPer100Km) / ROUNDING;
-		
-	}
-<<<<<<< HEAD
->>>>>>> 30861910be427e08882b513b002a9d75377ec443
-=======
->>>>>>> 30861910be427e08882b513b002a9d75377ec443
+ public double valueOfFuelForTrip(Route route) {
+  return (route.getKilometrs() * benzinPer100Km) / ROUNDING;
+  
+ }
 
     /** jhgfjhfgjhfjhgfjhfjytfrjytfjy
      * @return the model
@@ -72,11 +48,6 @@ public abstract class Car {
     public double getEngine() {
         return engine;
     }
-    
-    public double getSpendedHoursForRounte(Route route) {
-	double hours = (route.getK³lometrs() * benzinPer100Km) / ROUNDING;
-	return hours;
-    }
 
     /**
      * @param engine the engine to set
@@ -90,11 +61,11 @@ public abstract class Car {
      */
     @Override
     public String toString() {
-	return "Car [model=" + model + ", engine=" + engine + "]";
+ return "Car [model=" + model + ", engine=" + engine + "]";
     }
-	/*
-	 * method shows a number of fuel for needed kilemetres
-	 */
+ /*
+  * method shows a number of fuel for needed kilemetres
+  */
 
 
 }
